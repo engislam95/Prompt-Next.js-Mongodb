@@ -18,7 +18,6 @@ const CreatePrompt = () => {
     setIsSubmitting(true);
 
     try {
-      if(session?.user) {
         const response = await fetch("/api/prompt/new", {
           method: "POST",
           body: JSON.stringify({
@@ -30,8 +29,6 @@ const CreatePrompt = () => {
         if (response.ok) {
           router.push("/");
         }
-      }
-     
      
     } catch (error) {
       console.log(error);
