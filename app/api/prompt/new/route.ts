@@ -1,7 +1,7 @@
 import Prompt from "@/models/prompt"
 import { connectToDB } from "@/utils/database"
 
-export const POST = async(req: { json: () => PromiseLike<{ prompt: any; userId: any; tag: any }> | { prompt: any; userId: any; tag: any } } ) => {
+export const POST = async(req:any ) => {
     const {prompt , userId , tag} = await req.json()
     try {
         await connectToDB()
