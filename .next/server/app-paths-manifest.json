@@ -1,0 +1,9 @@
+{
+  "/page": "app/page.js",
+  "/profile/page": "app/profile/page.js",
+  "/update-prompt/page": "app/update-prompt/page.js",
+  "/create-prompt/page": "app/create-prompt/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/users/[id]/posts/route": "app/api/users/[id]/posts/route.js",
+  "/api/prompt/route": "app/api/prompt/route.js"
+}
